@@ -1,17 +1,20 @@
+import CartWidget from '../CartWidget/CartWidget';
 import './Navbar.css'
+import { IoLogoGitlab } from "react-icons/io5";
+
 
 function Navbar() {
     return (
         <>
             <header>
                 <nav className="nav-bar">
-                    <p>Logo</p>
+                    <IoLogoGitlab />
                     <ul className='nav-bar-items'>
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#about">Productos</a></li>
-                        <li><a href="#contact">Contacto</a></li>
+                        <li>Inicio</li>
+                        <li>Productos</li>
+                        <li>Contacto</li>
                     </ul>
-                    <p>Carrito (1)</p>
+                    <CartWidget />
                 </nav>
             </header>
         </>
