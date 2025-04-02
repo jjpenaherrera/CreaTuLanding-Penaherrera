@@ -1,9 +1,13 @@
 import './CartWidget.css'
 import { GiShoppingCart } from "react-icons/gi";
 
-function CartWidget() {
+function CartWidget({ cantidad }) {
     return (
-        <GiShoppingCart />
+        <>
+            <GiShoppingCart />
+            <p>{cantidad}</p>
+        </>
+
     );
 };
 
